@@ -6,7 +6,12 @@
     */
 
     //Entrada
-
+    let temp = Number(prompt(`informe uma temperatura em graus fahrenheit:`));
+    function graus(temp) {
+        celsius = (temp - 32) * 5 / 9;
+        alert(`A conversão de fahrenheit ${temp} pra celsius é ${celsius.toFixed(2)}`);
+    }
+    graus(temp)
 
     //Processamento
 
