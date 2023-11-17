@@ -7,10 +7,28 @@
 
     //Entrada
 
+    const frase = prompt(`informe uma frase`).trim().toUpperCase();
+    const letra = prompt(`informe uma letra`).trim().toUpperCase();
+
+    let lista = [];
 
     //Processamento
 
+    function msg(letra) {
+        for (item of frase) {
+            if (item.includes(letra)) {
+                lista.push(item)
+            }
+        }
+
+        return(lista.length)
+    }
+
 
     //Saída
+
+    let msgFinal = msg(letra)
+
+    document.write(`Existem ${msgFinal} letras ${letra} nessa frase`)
 
 </script>

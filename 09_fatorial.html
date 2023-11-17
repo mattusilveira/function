@@ -6,10 +6,25 @@
 
     //Entrada
 
+    const num = parseInt(prompt(`informe um número inteiro`).trim());
+
 
     //Processamento
 
+    function fatorial(num) {
+        if (num == 1) {
+            return (1);
+        }
+
+        else {
+            return (num * (fatorial(num - 1)));
+        }
+    }
+
 
     //Saída
+
+    let msg = fatorial(num)
+    document.write(`O fatorial de ${num} é: ${msg}`)
 
 </script>
